@@ -1,0 +1,15 @@
+# Dependency
+/vendor/
+
+# IDE or Editor
+.vscode
+.idea
+
+# Misc
+bin
+composer.lock
+
+# Backup
+bk*
+
+# Log

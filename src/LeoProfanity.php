@@ -1,6 +1,6 @@
 <?php
 
-namespace Jojoee\Library\LeoProfanity;
+namespace Jojoee\Library;
 
 /**
  * Class LeoProfanity

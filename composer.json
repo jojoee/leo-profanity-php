@@ -35,12 +35,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Jojoee\\Library\\LeoProfanity\\": "src"
+            "Jojoee\\Library\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Jojoee\\Library\\LeoProfanity\\": "tests"
+            "Jojoee\\Library\\": "tests"
         }
     },
     "scripts": {

@@ -4,7 +4,7 @@ namespace Jojoee\Library;
 
 /**
  * Class LeoProfanity
- * @package Jojoee\Library\LeoProfanity
+ * @package Jojoee\Library
  */
 class LeoProfanity
 {

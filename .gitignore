@@ -7,6 +7,7 @@
 
 # Misc
 bin
+build
 composer.lock
 
 # Backup

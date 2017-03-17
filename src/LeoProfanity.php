@@ -2,8 +2,6 @@
 
 namespace Jojoee\Library;
 
-use Jojoee\Library\Util;
-
 /**
  * Class LeoProfanity
  * @package Jojoee\Library

@@ -28,7 +28,7 @@ $filter->check('I have BoOb');
 
 ``` php
 // return all profanity words (string[])
-$filter.getList();
+$filter->getList();
 ```
 
 ### $filter->check(string)

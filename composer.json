@@ -40,7 +40,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Jojoee\\Library\\": "tests"
+            "Jojoee\\Library\\Tests\\": "tests"
         }
     },
     "scripts": {

@@ -33,6 +33,7 @@ class LeoProfanity
      * Remove word from the list
      *
      * @param string $str
+     * @return LeoProfanity
      */
     private function removeWord($str)
     {
@@ -40,12 +41,15 @@ class LeoProfanity
         if ($key !== false) {
             unset($this->words[$key]);
         }
+
+        return $this;
     }
 
     /**
      * Add word into the list
      *
      * @param string $str
+     * @return LeoProfanity
      */
     private function addWord($str)
     {
@@ -53,6 +57,8 @@ class LeoProfanity
         if ($key === false) {
             $this->words[] = $str;
         }
+
+        return $this;
     }
 
     /**
@@ -192,6 +198,7 @@ class LeoProfanity
      * Add word to the list
      *
      * @param string|string[] $data
+     * @return LeoProfanity
      */
     public function add($data)
     {
@@ -215,6 +222,7 @@ class LeoProfanity
      * Remove word from the list
      *
      * @param string|string[] $data
+     * @return LeoProfanity
      */
     public function remove($data)
     {
@@ -236,6 +244,8 @@ class LeoProfanity
 
     /**
      * Reset word list by using default dictionary (also remove word that manually add)
+     *
+     * @return LeoProfanity
      */
     public function reset()
     {
@@ -246,6 +256,8 @@ class LeoProfanity
 
     /**
      * Clear word list
+     *
+     * @return LeoProfanity
      */
     public function clearList()
     {

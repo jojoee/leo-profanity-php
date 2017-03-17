@@ -149,6 +149,46 @@ class LeoProfanity
     }
 
     /**
+     * Replace profanity words
+     *
+     * @todo improve algorithm
+     *
+     * @param string $str
+     * @param string $replaceKey one character only
+     * @return string
+     */
+    public function clean($str, $replaceKey = '*')
+    {
+        if (!$str) return '';
+        $originalString = $str;
+        $result = $str;
+
+        // collect comma and dot
+        $commaIndices = $this->util->getIndicesOf(',', $originalString);
+        $dotIndices = $this->util->getIndicesOf('.', $originalString);
+
+        $sanitizedStr = $this->sanitize($originalString);
+        // split by whitespace (keep delimiter)
+        // (cause comma and dot already replaced by whitespace)
+        $sanitizedArr = preg_split('/( )/', $sanitizedStr, 0, PREG_SPLIT_DELIM_CAPTURE);
+        // split by whitespace, comma and dot (keep delimiter)
+        $resultArr = preg_split('/( |,|\.)/', $result, 0, PREG_SPLIT_DELIM_CAPTURE);
+
+        // loop through given string
+        foreach ($sanitizedArr as $index => $value) {
+            if (in_array($value, $this->words)) {
+                $replacementWord = $this->getReplacementWord($replaceKey, strlen($value));
+                $resultArr[$index] = $replacementWord;
+            }
+        }
+
+        // combine it
+        $result = implode('', $resultArr);
+
+        return $result;
+    }
+
+    /**
      * Add word to the list
      *
      * @param string|string[] $data

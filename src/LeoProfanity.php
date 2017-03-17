@@ -16,7 +16,7 @@ class LeoProfanity
      */
     public function __construct()
     {
-        $this->wordDictionary['default'] = file_get_contents('./dictionary.json');
+        $this->wordDictionary['default'] = include __DIR__ . '/dictionary/default.php';
         $this->words = $this->wordDictionary['default'];
     }
 }

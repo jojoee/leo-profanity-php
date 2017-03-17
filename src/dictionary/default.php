@@ -1,4 +1,6 @@
-[
+<?php
+
+return array(
     "2g1c",
     "acrotomophilia",
     "anal",
@@ -251,4 +253,4 @@
     "yaoi",
     "yiffy",
     "zoophilia"
-]
+);

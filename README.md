@@ -1,9 +1,8 @@
 # leo-profanity-php
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
-[![Software License][ico-license]](LICENSE)
+[![Software License][ico-license]](LICENSE.md)
 [![Build Status][ico-travis]][link-travis]
-[![Total Downloads][ico-downloads]][link-downloads]
 
 Profanity filter, based on Shutterstock dictionary
 
@@ -127,9 +126,7 @@ Clear all profanity words
 [ico-version]: https://img.shields.io/packagist/v/jojoee/leo-profanity.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [ico-travis]: https://img.shields.io/travis/jojoee/leo-profanity-php/master.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/jojoee/leo-profanity.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/jojoee/leo-profanity
 [link-travis]: https://travis-ci.org/jojoee/leo-profanity-php
-[link-downloads]: https://packagist.org/packages/jojoee/leo-profanity
 

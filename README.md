@@ -117,7 +117,7 @@ Clear all profanity words
 - [x] `.travis.yml`
 - [ ] Implement `phpcs` into `.travis.yml` 
 - [x] README.md
-- [x] Support PHP version 5.4, 5.5, 5.6, 7.0, hhvm
+- [x] Support PHP version 5.6, 7.0, hhvm
 
 ## Reference
 

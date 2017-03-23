@@ -2,5 +2,6 @@
 <ruleset name="PSR2 Custom">
     <rule ref="PSR2">
         <exclude name="Generic.Files.LineEndings"/>
+        <exclude name="Generic.ControlStructures.InlineControlStructure"/>
     </rule>
 </ruleset>

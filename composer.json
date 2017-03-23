@@ -27,10 +27,10 @@
         }
     ],
     "require": {
-        "php": "~5.4|~7.0",
-        "phpmd/phpmd": "^2.6"
+        "php": "~5.4|~7.0"
     },
     "require-dev": {
+        "phpmd/phpmd": "^2.6",
         "phpunit/phpunit": "^5.7",
         "squizlabs/php_codesniffer": "^2.8"
     },

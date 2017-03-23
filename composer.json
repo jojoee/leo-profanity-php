@@ -45,7 +45,7 @@
         }
     },
     "scripts": {
-        "test": "phpunit",
+        "test": "phpunit && cat build/coverage.txt",
         "phpcs": "phpcs -p --standard=ruleset.xml --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
         "phpcbf": "phpcbf -p --standard=ruleset.xml --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
         "phpmd": "phpmd src/ text cleancode,codesize,controversial,design,naming,unusedcode",

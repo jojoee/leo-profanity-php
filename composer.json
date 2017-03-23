@@ -27,7 +27,8 @@
         }
     ],
     "require": {
-        "php": "~5.4|~7.0"
+        "php": "~5.4|~7.0",
+        "phpmd/phpmd": "^2.6"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",
@@ -46,7 +47,9 @@
     "scripts": {
         "test": "phpunit",
         "phpcs": "phpcs -p --standard=ruleset.xml --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
-        "phpcbf": "phpcbf -p --standard=ruleset.xml --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
+        "phpcbf": "phpcbf -p --standard=ruleset.xml --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+        "phpmd": "phpmd src/ text cleancode,codesize,controversial,design,naming,unusedcode",
+        "check": "composer test && composer phpcs && composer phpmd"
     },
     "config": {
         "sort-packages": true,

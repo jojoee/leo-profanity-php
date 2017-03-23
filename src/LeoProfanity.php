@@ -14,9 +14,6 @@ class LeoProfanity
     /** @var array */
     private $wordDictionary = [];
 
-    /** @var Util */
-    private $util = null;
-
     /**
      * LeoProfanity constructor.
      *
@@ -24,7 +21,6 @@ class LeoProfanity
      */
     public function __construct()
     {
-        $this->util = new Util();
         $this->wordDictionary['default'] = include __DIR__ . '/dictionary/default.php';
         $this->words = $this->wordDictionary['default'];
     }
@@ -73,13 +69,13 @@ class LeoProfanity
      * return '----'
      *
      * @param string $key
-     * @param integer $n
+     * @param integer $nKeys
      * @return string
      */
-    private function getReplacementWord($key, $n)
+    private function getReplacementWord($key, $nKeys)
     {
         $replacementWord = '';
-        for ($i = 0; $i < $n; $i++) {
+        for ($i = 0; $i < $nKeys; $i++) {
             $replacementWord .= $key;
         }
 
@@ -168,10 +164,6 @@ class LeoProfanity
         if (!$str) return '';
         $originalString = $str;
         $result = $str;
-
-        // collect comma and dot
-        $commaIndices = $this->util->getIndicesOf(',', $originalString);
-        $dotIndices = $this->util->getIndicesOf('.', $originalString);
 
         $sanitizedStr = $this->sanitize($originalString);
         // split by whitespace (keep delimiter)

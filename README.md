@@ -115,7 +115,7 @@ Clear all profanity words
 - [ ] Test coverage
 - [x] PHP CodeSniffer
 - [x] `.travis.yml`
-- [ ] Implement `phpcs` into `.travis.yml` 
+- [x] Implement `phpcs` into `.travis.yml` 
 - [x] README.md
 - [x] Support PHP version 5.6, 7.0, hhvm
 

@@ -21,5 +21,8 @@ before_script:
   - travis_retry composer install --no-interaction --prefer-source --dev
 script:
   - php --version
-  - phpunit --version
-  - bin/phpunit
+  - composer --version
+  - bin/phpunit --version
+  - bin/phpcs --version
+  - composer test
+  - composer phpcs

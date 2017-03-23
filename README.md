@@ -112,11 +112,8 @@ Clear all profanity words
 ## TODO
 
 - [x] Unit test
-- [ ] Test coverage
+- [x] Test coverage
 - [x] PHP CodeSniffer
-- [x] `.travis.yml`
-- [x] Implement `phpcs` into `.travis.yml` 
-- [x] README.md
 - [x] Support PHP version 5.6, 7.0, hhvm
 
 ## Contribute

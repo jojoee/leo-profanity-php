@@ -119,6 +119,10 @@ Clear all profanity words
 - [x] README.md
 - [x] Support PHP version 5.6, 7.0, hhvm
 
+## Contribute
+
+Please run `composer check` and fix before commit
+
 ## Reference
 
 - Skeleton template: [thephpleague/skeleton](https://github.com/thephpleague/skeleton), [koriym/Koriym.PhpSkeleton](https://github.com/koriym/Koriym.PhpSkeleton), [petk/php-skeleton](https://github.com/petk/php-skeleton)

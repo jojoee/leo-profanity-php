@@ -116,6 +116,13 @@ Clear all profanity words
 - [x] PHP CodeSniffer
 - [x] Support PHP version 5.6, 7.0, hhvm
 
+## Other languages
+- [x] Javascript on [npmjs.com/package/leo-profanity](https://www.npmjs.com/package/leo-profanity)
+- [x] PHP on [packagist.org/packages/jojoee/leo-profanity](https://packagist.org/packages/jojoee/leo-profanity)
+- [ ] Python on [PyPI](https://pypi.python.org/pypi)
+- [ ] Java on [Maven](https://maven.apache.org/)
+- [ ] Wordpress on [wordpress.org](https://wordpress.org/)
+
 ## Contribute
 
 Please run `composer check` and fix before commit
